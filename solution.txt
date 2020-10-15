@@ -1,0 +1,5 @@
+This question is same as Leetcode 56: Merge Intervals
+The idea of the solution is:
+1. We need to sort the input based on the left value first
+2. After sorting, for each interval, we need to put the pair into a stack 
+3. If the left value we are working is smaller than the end of the peek, we know there is not space between the two interval, then we need to merge those two.

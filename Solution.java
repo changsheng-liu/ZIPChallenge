@@ -27,6 +27,7 @@ class Solution {
 	
 	private Stack<Interval> merge(Interval[] intervals) {
 		Arrays.sort(intervals, (a,b)->Integer.compare(a._start,b._start));
+		//Please note that I understand stack is abanden in industry. We should use double deque instead. But here is for demostation.
 		Stack<Interval> stack = new Stack<>();
 		stack.push(intervals[0]);
 		for(int i = 0; i < intervals.length; i++) {
